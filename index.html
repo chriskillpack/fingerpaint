@@ -1,17 +1,20 @@
-<html>
+<!doctype html>
+<meta charset=utf-8>
 <head>
-  <!-- Copyright 2010 Chris Killpack. All Rights Reserved. -->
+  <!-- Copyright 2011. All Rights Reserved. -->
   <title>.FingerPaint.</title>
-  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="jquery-1.7.1.min.js">
   <script type="text/javascript" src="images/images.json"></script>
   <script type="text/javascript" src="paint.js"></script>
   <script type="text/javascript">
-    google.load('jquery', '1.4.2');
-    google.setOnLoadCallback(function() {
+    $(document).ready(function() {
       // Load the Mousewheel jQuery plugin.
       $.getScript('jquery.mousewheel.min.js');
-      paint.init();
+      // After images load
+      $(window).load(function() {
+        paint.init();
+      });
     });
   </script>
 </head>
@@ -42,4 +45,3 @@
   <div id="hovercard" style="display:none; position:absolute;">This is a test</div>
   <textarea id="text"></textarea>
 </body>
-</html>

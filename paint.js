@@ -22,6 +22,8 @@ var paint = {
 
     this.brushType_ = 0;  // circle
 
+    var that = this;
+
     // Setup image click handling
     var imageContainer = $('images');
     $('#images > img').each(function(i) {
@@ -29,20 +31,20 @@ var paint = {
         var top = event.pageY + 10;
         var left = event.pageX + 10;
 
-        var info = imageInfo_[this.id];
-        var hoverCardHtml = '<b>' + info.title + '<b>';
-        hoverCardHtml += '<br><a href="' + info.url + '">' + info.url + '</a>';
-
-        $('#hovercard')
-            .css({top: paint.px_(top), left: paint.px_(left)})
-            .html(hoverCardHtml)
-            .fadeIn(200);
+        // var info = imageInfo_[this.id];
+        // var hoverCardHtml = '<b>' + info.title + '<b>';
+        // hoverCardHtml += '<br><a href="' + info.url + '">' + info.url + '</a>';
+        //
+        // $('#hovercard')
+        //     .css({top: paint.px_(top), left: paint.px_(left)})
+        //     .html(hoverCardHtml)
+        //     .fadeIn(200);
       }, function() {
-        $('#hovercard').fadeOut(200);
+        // $('#hovercard').fadeOut(200);
       });
       $(this).click(function() {
         paint.imageData_ = paint.selectImage_(this.id, paint.context_);
-        this.clearRecordingBuffer_();
+        that.clearRecordingBuffer_();
       });
     });
 
