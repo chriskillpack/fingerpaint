@@ -1,3 +1,12 @@
+toolbox {
+  float: right;
+}
+
+gallery {
+  display: block;
+  clear: both;
+}
+
 img .selected {
   border:1px solid black;
 }

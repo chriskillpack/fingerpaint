@@ -1,11 +1,6 @@
 imageInfo_ =
 {
   'image_0': {
-    'title': 'Feet',
-    'url': 'Somewhere on flickr.com.'
-  },
-
-  'image_1': {
     'title': 'Sunlight',
     'url': 'http://www.flickr.com/photos/tonyarmstrong/4547474233/'
   }

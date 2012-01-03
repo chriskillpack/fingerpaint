@@ -114,7 +114,7 @@ var paint = {
    * @param {string} msg The message to display.
    */
   debug_: function(msg) {
-    document.getElementById('text').innerHTML = msg;
+    document.getElementById('debug').innerHTML = msg;
   },
 
 

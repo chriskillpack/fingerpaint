@@ -34,14 +34,15 @@
   scroll wheel adjusts brush size.
   </div>
   <canvas id="canvas" width="320" height="480"></canvas>
-  <canvas id="brush_canvas" width="45" height="45"></canvas>
-  <div id="images">
-    <img id="image_0" src="images/feet.jpg">
-    <img id="image_1" src="images/sunlight.jpg">
-  </div>
+  <toolbox>
+    <canvas id="brush_canvas" width="45" height="45"></canvas>
+  </toolbox>
+  <gallery id=images>
+    <img id="image_0" src="images/sunlight.jpg">
+  </gallery>
   <div id="playback" style="background: yellow; width:250px">
     Playback drawing. <span id="recording"></span>
   </div>
   <div id="hovercard" style="display:none; position:absolute;">This is a test</div>
-  <textarea id="text"></textarea>
+  <textarea id="debug"></textarea>
 </body>
